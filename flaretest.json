@@ -1,0 +1,21 @@
+var keeper = {
+    "naam": "things",
+    "children": [
+        {
+            "name": "bloeb",
+            "size": 310023
+        },
+        {
+            "name": "poef",
+            "size": 1874900
+        },
+        {
+            "name": "lalala",
+            "size": 3874900
+        },
+        {
+            "name": "dapp",
+            "size": 412440
+        }
+    ]
+}

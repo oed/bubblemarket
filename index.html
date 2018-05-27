@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>Bubble Market</title>
+     <script type="text/javascript" src="http://mbostock.github.com/d3/d3.js?2.3.0"></script>
+   <script type="text/javascript" src="http://mbostock.github.com/d3/d3.layout.js?2.3.0"></script>
+    <link type="text/css" rel="stylesheet" href="bubble.css"/>
+  </head>
+  <body>
+    <div id="chart"></div>
+    <div id="buyorsell" style="display:none">
+        <div>Bubble Name: <span id="name"></span></div>
+        <div>Bubble URL: <span id="url"></span></div>
+        <div>Supply: <span id="supply"></span></div>
+        <div>Your balance: <span id="balance"></span></div>
+        <div id="buy">
+            <input type="number" id="bnumTokens" placeholder="number of tokens to buy">
+            <input type="number" disabled id="bprice" placeholder="cost in wei">
+            <input type="button" id="buyTok" class="buttons" value="buy">
+        </div>
+        <div id="sell">
+            <input type="number" id="snumTokens" placeholder="number of tokens to sell">
+            <input type="number" disabled id="sprice" placeholder="reward in wei">
+            <input type="button" id="sellTok" class="buttons" value="sell">
+        </div>
+    </div>
+    <br \>
+    <div>
+        <input type="text" id="bname" placeholder="Name">
+        <input type="text" id="burl" placeholder="URL">
+        <input type="button" id="newBubble" class="buttons" value="addBubble">
+    </div>
+    <br \>
+    <br \>
+    <input type="button" id="update" class="buttons" value="Update">
+    <script type="text/javascript" src="bubble.js"></script>
+    <h6>You have to install <a href="https://metamask.io/">metamask</a> to use this app</h6>
+    <h6>NOTE: the smart contract powering this dapp has not been audited. There is most likely bugs that can cause you to lose ether. Use at your own risk.</h6>
+  </body>
+</html>
