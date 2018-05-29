@@ -7108,7 +7108,7 @@ function update () {
             name,
             url,
             address,
-            size: totalSupply > 500 ? totalSupply : 500
+            size: totalSupply > 1000 ? totalSupply : 1000
           })
           draw()
         })
